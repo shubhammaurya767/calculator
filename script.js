@@ -67,7 +67,8 @@ for (let i = 0; i < buttons.length; i++) {
             if(operand1!=null && operator!=null && currop!=null)
             {
                 result = eval(operand1 + ' ' + operator + ' ' + currop);
-                display.textContent=result;
+                let ans=parseFloat(result.toFixed(9));
+                display.textContent=ans;
                 operand1=result;
                 operator=null;
                 currop=null;
