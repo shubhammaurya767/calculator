@@ -29,7 +29,7 @@ for (let i = 0; i < buttons.length; i++) {
         }
         else if (value == "ce") {
             currop=null;
-            if(operand1!=null)
+            if(operand1!=null && operator!=null)
                 display.textContent = operand1+" "+operator+" ";
             else
                 display.textContent = "";
