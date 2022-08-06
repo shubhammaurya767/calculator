@@ -18,6 +18,8 @@ for (let i = 0; i < buttons.length; i++) {
                 //= operation performed
                 let result = -1;
                 if (operand1 != null && operator != null && currop != null) {
+                    operand1=parseFloat(operand1).toString();
+                currop=currop.trim();
                     result = eval(operand1 + ' ' + operator + ' ' + currop);
                     let ans = parseFloat(result.toFixed(9));
                     display.textContent = ans;
@@ -95,6 +97,8 @@ for (let i = 0; i < buttons.length; i++) {
         else if (value == "=") {
             let result = -1;
             if (operand1 != null && operator != null && currop != null) {
+                operand1=parseFloat(operand1).toString();
+                currop=currop.trim();
                 result = eval(operand1 + ' ' + operator + ' ' + currop);
                 let ans = parseFloat(result.toFixed(9));
                 display.textContent = ans;
@@ -115,9 +119,9 @@ for (let i = 0; i < buttons.length; i++) {
                 if (currop == null) currop = value;
                 else
                     currop += value;
-                console.log(currop);
                 display.textContent += value;
             }
+            // console.log(value);
             lastkeypress = 7;
         }
     });
