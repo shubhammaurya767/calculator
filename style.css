@@ -13,7 +13,8 @@
     background-size: cover;
     background-position: top;
     /* background-image:url(http://bit.ly/2gPLxZ4); */
-    background-image:url(https://virtuoart.com/public/uploads/preview/mountains-peaks-fog-128806-7952x5304-171574447640hobqhppkt0.jpg);
+    /* background-image:url(https://virtuoart.com/public/uploads/preview/mountains-peaks-fog-128806-7952x5304-171574447640hobqhppkt0.jpg); */
+    background-image: url(res/chalk1.jpg);
     font-family: Cambria, Georgia, serif;
 }
 
@@ -119,3 +120,12 @@
 /* #button-zero {
     width: 50%;
 } */
+.footer {
+    position: fixed;
+    right:2vw;
+    bottom: 1vh;
+    max-width: 100%;
+    /* background-color: red; */
+    color: white;
+    text-align:center;
+ }
