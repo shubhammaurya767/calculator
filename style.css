@@ -72,6 +72,8 @@
 }
 
 #display-container p {
+    /* overflow-x:scroll; */
+    scroll-behavior: auto;
     margin:0px;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
