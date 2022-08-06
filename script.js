@@ -30,7 +30,15 @@ for (let i = 0; i < buttons.length; i++) {
         }
         else if (value == "ce") {
             currop = null;
-            if (operand1 != null && operator != null) {
+            if(lastkeypress==0)
+            {
+                currop = null;
+                operand1 = null;
+                operator = null;
+                display.textContent = "";
+                lastkeypress=-1;
+            }
+            else if (operand1 != null && operator != null) {
                 display.textContent = operand1 + " " + operator + " ";
                 lastkeypress = 1;
             }
