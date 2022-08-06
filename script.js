@@ -13,6 +13,19 @@ for (let i = 0; i < buttons.length; i++) {
 
         let value = this.getAttribute('data-value');
         if (isOperator(value)) {
+            if(operator!=null)
+            {
+                //= operation performed
+                let result = -1;
+                if (operand1 != null && operator != null && currop != null) {
+                    result = eval(operand1 + ' ' + operator + ' ' + currop);
+                    let ans = parseFloat(result.toFixed(9));
+                    display.textContent = ans;
+                    operand1 = result;
+                    operator = null;
+                    currop = null;
+                }
+            }
             operator = value;
             if (operand1 == null)
                 operand1 = currop;
